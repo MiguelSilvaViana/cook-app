@@ -35,8 +35,9 @@ export default function Index() {
   }
 
   useEffect(() => {
-    // services.ingredients.findAll().then((data) => setIngredients(data)) isso abaixo é a mesma coisa q isso em cima;
-    services.ingredients.findAll().then(setIngredients);
+    // services.ingredients.findAll().then((data) => setIngredients(data)) isso abaixo é a mesma coisa q isso em cima colocando somente o setIngredients;
+
+    services.ingredientes.findAll().then(setIngredients);
   }, []);
 
   return (
